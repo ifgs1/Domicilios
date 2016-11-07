@@ -28,10 +28,10 @@
 
 #pragma mark - Network Services
 
-- (void)sendRequest:(YPDataRequest *)request withResponseBlock:(ServiceResponse)responseBlock
+- (void)sendRequest:(DataRequest *)request withResponseBlock:(ServiceResponse)responseBlock
 {
     if (![self canReachInternetConnection]) {
-        YPResponseError *responseError = [YPResponseError new];
+        ResponseError *responseError = [ResponseError new];
         responseError.code = @(YPNetworkNoInternetConnectionCode);
         responseError.message = @"Se ha presentado un error de comunicación.";
         responseBlock(NO, responseError);
@@ -105,7 +105,7 @@
 }
 
 - (void)timeOut {
-    YPResponseError *timeoutError = [[YPResponseError alloc] init];
+    ResponseError *timeoutError = [[ResponseError alloc] init];
     timeoutError.code = @408;
     timeoutError.message = @"El servidor no responde, intenta en unos minutos.";
     void (^ServiceResponse)(BOOL success, id response);

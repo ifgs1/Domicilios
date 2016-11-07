@@ -10,4 +10,7 @@
 
 @interface RestaurantService : NSObject
 
++(RestaurantService *)shareRestaurantService;
+-(void)getRestaurantsWithSuccess:(void (^)(BOOL success, id response))successBlock;
+
 @end

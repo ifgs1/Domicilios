@@ -1,9 +1,9 @@
 //
-//  PCHAskedQuestions.m
-//  Banca Movil
+//  
+//  Domicilios
 //
-//  Created by Arturo Gamarra on 7/7/15.
-//  Copyright (c) 2015 YellowPepper. All rights reserved.
+//  Created by Ivan F Garcia S on 11/7/16.
+//  Copyright © 2016 Ivan F Garcia S. All rights reserved.
 //
 
 #import "Restaurant.h"
@@ -12,11 +12,13 @@
 
 - (void)copyFromJSON:(NSDictionary *)json
 {
-    NSString *newString1 = [[json objectForKey:@"answer"] stringByReplacingOccurrencesOfString:@"\n\t\t" withString:@""];
-    NSString *newString2 = [newString1 stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-    self.answer = newString2;
-    self.question = [json objectForKey:@"question"];
-    self.showAnswer = NO;
+    self.categorias = [json objectForKey:@"categorias"];
+    self.domicilio = [json objectForKey:@"domicilio"];
+    self.logo_path = [json objectForKey:@"logo_path"];
+    self.nombre = [json objectForKey:@"nombre"];
+    self.rating = [json objectForKey:@"rating"];
+    self.tiempo_domicilio = [json objectForKey:@"tiempo_domicilio"];
+    self.ubicacion_txt = [json objectForKey:@"ubicacion_txt"];
 }
 
 @end

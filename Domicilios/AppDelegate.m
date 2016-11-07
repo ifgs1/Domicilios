@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIColor+Domicilios.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setUIAppearance];
     return YES;
 }
 
@@ -122,6 +124,32 @@
             abort();
         }
     }
+}
+
+#pragma mark - UIAppearance
+
+- (void)setUIAppearance
+{
+    UIApplication *application = [UIApplication sharedApplication];
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    UIBarButtonItem *barItem = [UIBarButtonItem appearance];
+    
+    if ([UINavigationBar instancesRespondToSelector:@selector(setBarTintColor:)]) {
+        [application setStatusBarStyle:UIStatusBarStyleDefault];
+        [navBar setBarTintColor:[UIColor domiciliosRedColor]];
+        [barItem setTintColor:[UIColor whiteColor]];
+    } else {
+        [navBar setTintColor:[UIColor whiteColor]];
+        [barItem setTitlePositionAdjustment:(UIOffset){0,3} forBarMetrics:UIBarMetricsDefault];
+        [barItem setTintColor:[UIColor whiteColor]];
+    }
+    
+    [navBar setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:22.0],
+                                     NSForegroundColorAttributeName : [UIColor whiteColor]}];
+    [barItem setTitleTextAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14.0f],
+                                      NSForegroundColorAttributeName : [UIColor whiteColor]}
+                           forState:UIControlStateNormal];
+    
 }
 
 @end

@@ -1,42 +1,38 @@
 //
-//  UIColor+Azteca.m
-//  Azteca
+//  
+//  Domicilios
 //
-//  Created by Alejandro Fernandez on 7/11/16.
-//  Copyright © 2016 YellowPepper. All rights reserved.
+//  Created by Ivan F Garcia S on 11/7/16.
+//  Copyright © 2016 Ivan F Garcia S. All rights reserved.
 //
 
-#import "UIColor+Azteca.h"
+#import "UIColor+Domicilios.h"
 #import "UIColor+HexString.h"
 
 @implementation UIColor (Domicilios)
 
-+ (UIColor *)aztecaEvenDarkGrayText
++ (UIColor *)domiciliosRedColor
 {
-    return [UIColor colorWithHexString:@"707273"];
+    return [UIColor colorWithHexString:@"D01D39"];
 }
 
-+(UIColor *)aztecaDarkGrayText
-{
-    return [UIColor grayColor];
-}
 
-+(UIColor *)aztecaGrayText
++(UIColor *)GrayText
 {
     return [UIColor colorWithHexString:@"B4B5B4"];
 }
 
-+(UIColor *)aztecaGrayFill
++(UIColor *)GrayFill
 {
     return [UIColor colorWithHexString:@"F2F1F1"];
 }
 
-+(UIColor *)aztecaGreen
++(UIColor *)Green
 {
     return [UIColor colorWithHexString:@"509D49"];
 }
 
-+(UIColor *)aztecaLightGreen
++(UIColor *)LightGreen
 {
     return [UIColor colorWithHexString:@"ABD19D"];
 }
@@ -45,7 +41,7 @@
 {
     return [UIColor colorWithHexString:@"DAD9D9"];
 }
-+(UIColor *)aztecaCellTextColor
++(UIColor *)CellTextColor
 {
     return [UIColor colorWithHexString:@"675C53"];
 }
