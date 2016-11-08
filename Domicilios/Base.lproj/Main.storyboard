@@ -385,7 +385,7 @@
                         <outlet property="lblRestaurantCategory" destination="YCQ-eA-Zg8" id="jWA-20-ZE4"/>
                         <outlet property="lblRestaurantNAme" destination="2IV-cO-lKj" id="1Av-MR-0x5"/>
                         <outlet property="lblRestaurantRating" destination="G2f-Cw-315" id="WzE-Np-X7v"/>
-                        <outlet property="mapView" destination="0nl-RH-KiV" id="VmM-1d-Spx"/>
+                        <outlet property="mapContainerView" destination="yHi-tq-Pyi" id="q0y-tC-jhi"/>
                         <outlet property="restaurantImageView" destination="gtg-1I-100" id="jNf-ft-4M0"/>
                         <outlet property="view" destination="JlF-5T-Dce" id="Jpn-3z-qmw"/>
                     </connections>

@@ -19,6 +19,8 @@
 }
 
 -(void)setUpUI{
+    self.mapContainerView.layer.cornerRadius = 5;
+    self.mapContainerView.layer.masksToBounds = YES;
     self.mapView.showsUserLocation = YES;
     self.lblRestaurantNAme.text = self.restaurant.nombre;
     self.lblRestaurantCategory.text = self.restaurant.categorias;
@@ -44,7 +46,7 @@
         [self.mapView setRegion:region];
         [self.mapView addAnnotation:annotation];
     }
-    UIImage *img = [UIImage imageNamed:@"restaurant-placeholder"];
+    UIImage *img = [UIImage imageNamed:@"restaurantDetail"];
     [self.restaurantImageView sd_setImageWithURL:[NSURL URLWithString:self.restaurant.logo_path] placeholderImage:img];
     
 

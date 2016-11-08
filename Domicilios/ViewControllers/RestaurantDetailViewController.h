@@ -19,5 +19,6 @@
 @property (strong, nonatomic) Restaurant *restaurant;
 @property (weak, nonatomic) IBOutlet UILabel *lblDomicilio;
 @property (weak, nonatomic) IBOutlet UILabel *lblRestaurantRating;
+@property (weak, nonatomic) IBOutlet UIView *mapContainerView;
 
 @end
