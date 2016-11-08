@@ -163,10 +163,8 @@
 		F2CBF1761DD0D887004E9A40 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				F2CBF1611DD0D616004E9A40 /* ViewController.h */,
-				F2CBF1621DD0D616004E9A40 /* ViewController.m */,
-				F2499D351DD0FC710082AD9E /* RestaurantDetailViewController.h */,
-				F2499D361DD0FC710082AD9E /* RestaurantDetailViewController.m */,
+				F2D032341DD1940300CE71AE /* RestaurantDetail */,
+				F2D032331DD193F300CE71AE /* RestaurantList */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -254,6 +252,24 @@
 				F2CBF1B41DD0F01E004E9A40 /* RestaurantCell.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		F2D032331DD193F300CE71AE /* RestaurantList */ = {
+			isa = PBXGroup;
+			children = (
+				F2CBF1611DD0D616004E9A40 /* ViewController.h */,
+				F2CBF1621DD0D616004E9A40 /* ViewController.m */,
+			);
+			name = RestaurantList;
+			sourceTree = "<group>";
+		};
+		F2D032341DD1940300CE71AE /* RestaurantDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F2499D351DD0FC710082AD9E /* RestaurantDetailViewController.h */,
+				F2499D361DD0FC710082AD9E /* RestaurantDetailViewController.m */,
+			);
+			name = RestaurantDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
