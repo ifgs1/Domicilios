@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		987017EFD45D9E8CD916071C /* libPods-Domicilios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91740B582237580D60B6DF81 /* libPods-Domicilios.a */; };
+		F21FCF3B1DD163D40080CCA8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21FCF3A1DD163D40080CCA8 /* MapKit.framework */; };
 		F2499D371DD0FC710082AD9E /* RestaurantDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2499D361DD0FC710082AD9E /* RestaurantDetailViewController.m */; };
 		F2CBF15D1DD0D616004E9A40 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CBF15C1DD0D616004E9A40 /* main.m */; };
 		F2CBF1601DD0D616004E9A40 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CBF15F1DD0D616004E9A40 /* AppDelegate.m */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		91740B582237580D60B6DF81 /* libPods-Domicilios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Domicilios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0DAFC8C2DF1FA1DB540884E /* Pods-Domicilios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domicilios.release.xcconfig"; path = "Pods/Target Support Files/Pods-Domicilios/Pods-Domicilios.release.xcconfig"; sourceTree = "<group>"; };
+		F21FCF3A1DD163D40080CCA8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F23237A9357C132B15C10F2E /* Pods-Domicilios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domicilios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Domicilios/Pods-Domicilios.debug.xcconfig"; sourceTree = "<group>"; };
 		F2499D351DD0FC710082AD9E /* RestaurantDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RestaurantDetailViewController.h; path = ViewControllers/RestaurantDetailViewController.h; sourceTree = "<group>"; };
 		F2499D361DD0FC710082AD9E /* RestaurantDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RestaurantDetailViewController.m; path = ViewControllers/RestaurantDetailViewController.m; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21FCF3B1DD163D40080CCA8 /* MapKit.framework in Frameworks */,
 				987017EFD45D9E8CD916071C /* libPods-Domicilios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +100,7 @@
 		BD8047CB4029F85E50315D4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F21FCF3A1DD163D40080CCA8 /* MapKit.framework */,
 				91740B582237580D60B6DF81 /* libPods-Domicilios.a */,
 			);
 			name = Frameworks;

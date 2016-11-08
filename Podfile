@@ -8,6 +8,6 @@ pod 'SVProgressHUD'
 pod 'AFNetworking', '~> 2.5.3'
 pod 'SDWebImage'
 pod 'JSONModel'
-
+pod 'ActionSheetPicker-3.0', '~> 2.2.0'
 end
 
